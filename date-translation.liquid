@@ -1,0 +1,73 @@
+
+
+
+{% liquid
+  assign date = date | time_tag: "%b %d, %y"
+
+  assign jan = "general.months_abbr.january" | t
+  assign feb = "general.months_abbr.february" | t
+  assign mar = "general.months_abbr.march" | t
+  assign apr = "general.months_abbr.april" | t
+  assign may = "general.months_abbr.may" | t
+  assign jun = "general.months_abbr.june" | t
+  assign jul = "general.months_abbr.july" | t
+  assign aug = "general.months_abbr.august" | t
+  assign sep = "general.months_abbr.september" | t
+  assign oct = "general.months_abbr.october" | t
+  assign nov = "general.months_abbr.november" | t
+  assign dec = "general.months_abbr.december" | t
+
+  assign mon = "general.days_abbr.monday" | t
+  assign tue = "general.days_abbr.tuesday" | t
+  assign wed = "general.days_abbr.wednesday" | t
+  assign thu = "general.days_abbr.thursday" | t
+  assign fri = "general.days_abbr.friday" | t
+  assign sat = "general.days_abbr.saturday" | t
+  assign sun = "general.days_abbr.sunday" | t
+
+  if translation == true
+    if date contains 'Jan'
+    echo date | replace: 'Jan', jan
+    elsif date contains 'Feb'
+    echo date | replace: 'Feb', feb
+    elsif date contains 'Mar'
+    echo date | replace: 'Mar', mar
+    elsif date contains 'Apr'
+    echo date | replace: 'Apr', apr
+    elsif date contains 'May'
+    echo date | replace: 'May', may
+    elsif date contains 'Jun'
+    echo date | replace: 'Jun', jun
+    elsif date contains 'Jul'
+    echo date | replace: 'Jul', jul
+    elsif date contains 'Aug'
+    echo date | replace: 'Aug', aug
+    elsif date contains 'Sep'
+    echo date | replace: 'Sep', sep
+    elsif date contains 'Oct'
+    echo date | replace: 'Oct', oct
+    elsif date contains 'Nov'
+    echo date | replace: 'Nov', nov
+    elsif date contains 'Dec'
+    echo date | replace: 'Dec', dec
+
+    elsif date contains 'Mon'
+    echo date | replace: 'Mon', mon
+    elsif date contains 'Tue'
+    echo date | replace: 'Tue', mon
+    elsif date contains 'Wed'
+    echo date | replace: 'Wed', mon
+    elsif date contains 'Thu'
+    echo date | replace: 'Thu', mon
+    elsif date contains 'Fri'
+    echo date | replace: 'Fri', mon
+    elsif date contains 'Sat'
+    echo date | replace: 'Sat', mon
+    elsif date contains 'Sun'
+    echo date | replace: 'Sun', mon
+    endif
+  else
+  echo date
+  endif
+
+%}
