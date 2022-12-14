@@ -3,9 +3,6 @@
 You can change the formatting of the date string with Shopify, the output will be on English by default and we can't change it from translation file,  with the following codes it will be easy to change the months and date to any languages and you don't need to change it from the code.
 
 
-# Editor.md
-
-
 ### Usage
 
 - Donwload and upload the file `date-translation.liquid` on the **snippet** folder.
