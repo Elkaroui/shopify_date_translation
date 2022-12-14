@@ -21,7 +21,7 @@ You can change the formatting of the date string with Shopify, the output will b
 
 #### en.default.json
 
-Indented 4 spaces, like `<pre>` (Preformatted Text).
+Add the translation to `en.default.json`
 
 ```JSON
   "general": {
