@@ -26,7 +26,7 @@ Indented 4 spaces, like `<pre>` (Preformatted Text).
 ```JSON
   "general": {
    {},
-  "months_abbr": {
+    "months_abbr": {
       "january" : "Jan",
       "february" : "Feb",
       "march" : "Mar",
